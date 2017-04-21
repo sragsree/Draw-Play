@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/mode"
+        android:id="@+id/mode">
+        <menu>
+            <group
+                android:id="@+id/modegroup"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/insert"
+                    android:title="@string/insert"
+                    android:checked="true" />
+                <item
+                    android:id="@+id/delete"
+                    android:title="@string/delete" />
+                <item
+                    android:id="@+id/move"
+                    android:title="@string/move" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/color"
+        android:title="@string/color">
+        <menu>
+            <group
+                android:id="@+id/colorgroup"
+                android:checkableBehavior="single"
+                android:visible="true"
+                android:enabled="true">
+                <item android:title="@string/black"
+                    android:id="@+id/black"
+                    android:checked="true" />
+                <item
+                    android:id="@+id/red"
+                    android:title="@string/red" />
+                <item
+                    android:id="@+id/green"
+                    android:title="@string/green" />
+                <item
+                    android:id="@+id/blue"
+                    android:title="@string/blue" />
+            </group>
+        </menu>
+    </item>
+</menu>
+
